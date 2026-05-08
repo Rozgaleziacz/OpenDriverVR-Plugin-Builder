@@ -1,94 +1,89 @@
 # OpenDriver Plugin Builder
 
-A simple GUI tool that streamlines building and installing plugins for OpenDriver on Windows.
+A simple GUI tool that streamlines building and installing plugins for OpenDriver on Windows.  
+This project turns the classic CMake + Visual Studio workflow into a single click experience.
 
-This project turns the messy CMake + Visual Studio workflow into a single click experience.
+## Demo
 
----
+https://github.com/user-attachments/assets/ce7351a4-4f65-49d5-a4f7-709b75cdd370
 
-## 🎬 Demo
+## Features
 
-https://github.com/user-attachments/assets/b21c370a-3781-4859-bc31-06dcf05acbb1
+- One-click plugin build system  
+- Automatic installation into OpenDriver plugins folder  
+- Correct plugin structure generation  
+- Automatic plugin.json handling  
+- Live build output terminal  
+- Clean build option  
+- Auto detection of OpenDriver directory  
+- Windows-friendly workflow  
 
+## Download (Recommended)
 
-⚡ Features
-One-click plugin build system
-Automatic installation into OpenDriver plugins folder
-Correct plugin structure generation
-Copies plugin.json automatically
-Live build output terminal
-Clean build option
-Auto detection of OpenDriver directory
-Windows-ready workflow
-📦 Download (Recommended)
+Prebuilt version available (no Python required):
 
-You can download a precompiled version (no Python needed):
-
-👉 Latest release:
-https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/releases/latest
+Latest release:
+https://github.com/Rozgaleziacz/OpenDriverVR-Plugin-Builder/releases/latest
 
 Go to Releases → Latest → Download ODVR Builder.exe
 
-🧠 Open Source Project
+## Open Source Project
 
 This project is fully open source.
 
-Original implementation is written in Python
-Source code is available in this repository (top-level files)
-You are free to:
-modify it
-fork it
-improve it
-use it in your own tools
+- Original version is written in Python  
+- Source code is available in this repository  
+- Everything is transparent and editable  
 
-No hidden binaries, no closed logic — everything is visible in the source code.
+You are free to fork it, modify it, improve it, and reuse it in your own tools.
 
-📁 OpenDriver Compatibility
+No hidden logic, no closed components — everything is visible in the source code.
 
-This tool is designed specifically for:
+## OpenDriver Compatibility
 
-👉 OpenDriver VR project
-https://github.com/OpenDriver-VR/OpenDriver
+Designed for OpenDriver VR:
 
-It automatically installs plugins into:
+https://github.com/Rozgaleziacz/OpenDriver-VR
 
+Automatically installs plugins into:
 %APPDATA%/opendriver/plugins
-🧩 Example Plugin Structure
+
+## Example Plugin Structure
+
 plugins/
 └── mouse_locomotion/
     ├── mouse_locomotion.dll
     └── plugin.json
-🛠 Requirements (for building from source)
 
-If you want to run from source:
+## Requirements (for building from source)
 
-Python 3.9+
-CMake
-Visual Studio 2022 Build Tools
-Windows 10/11
+- Python 3.9+
+- CMake
+- Visual Studio 2022 Build Tools
+- Windows 10/11
 
 Install dependencies:
-
 pip install customtkinter
 
-Run:
-
+Run from source:
 python main.py
-🚀 Build system
 
-Internally the tool runs:
+## Build System
 
+Internally runs:
 cmake -B build
 cmake --build build --config Release
 
-Then automatically installs the resulting plugin into OpenDriver.
+Then automatically installs the compiled plugin into OpenDriver.
 
-🔧 Planned Features
-Hot reload system (instant plugin reload)
-Plugin templates (Discord RPC, locomotion, trackers)
-Dependency manager (ViGEm, Discord RPC, etc.)
-Auto rebuild on file save
-OpenDriver launcher integration
-📜 License
+## Planned Features
 
-MIT License — fully open source, no restrictions.
+- Hot reload system (instant plugin updates)  
+- Plugin templates (Discord RPC, locomotion, trackers)  
+- Dependency manager (ViGEm, Discord RPC, etc.)  
+- Auto rebuild on file save  
+- OpenDriver launcher integration  
+
+## License
+
+MIT License — fully open source project.
