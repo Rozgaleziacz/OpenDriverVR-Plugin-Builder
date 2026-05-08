@@ -8,14 +8,6 @@ This project turns the messy CMake + Visual Studio workflow into a single click 
 
 ## 🎬 Demo
 
-> Add a short video/gif here showing:
-> - selecting a plugin folder
-> - clicking BUILD + INSTALL
-> - plugin appearing in OpenDriver
-
-```text
-
-
 https://github.com/user-attachments/assets/b21c370a-3781-4859-bc31-06dcf05acbb1
 
 
